@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Side Bar Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="logo">
+            <i class="fa fa-arrow-left hide" onclick="hide()"></i>
+            <div class="heading">
+                <h1><span>S</span>ide <span>B</span>ar</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href=""><i class="fa fa-home"></i>Home</a></li>
+                <li><a href=""><i class="fa fa-envelope"></i>Inbox</a></li>
+                <li><a href=""><i class="fa fa-users"></i>Users</a></li>
+                <li><a href=""><i class="fa fa-book"></i>Course</a></li>
+                <li><a href=""><i class="fa fa-cog"></i>Setting</a></li>
+                <li><a href=""><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <i class="fa fa-bars show" onclick="show()"></i>
+    </div>
+    <script>
+        var sidebar = document.getElementById("sidebar");
+
+        function show() {
+            sidebar.style.left = "0";
+        }
+
+        function hide() {
+            sidebar.style.left = "-250px";
+        }
+
+    </script>
+</body>
+
+</html>

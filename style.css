@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #A62349;
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #411530;
+    border-right: 2px solid yellow;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    transition: .4s;
+}
+
+.sidebar .logo .hide {
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.content .show {
+    font-size: 28px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+.sidebar .heading {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+span {
+    color: #EAE509;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sidebar .heading::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-left: 5px solid #EAE509;
+    border-bottom: 5px solid #EAE509;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar .heading::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border-top: 5px solid #EAE509;
+    border-right: 5px solid #EAE509;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sidebar nav {
+    letter-spacing: 2px;
+    flex: 1;
+}
+
+.sidebar ul li {
+    list-style: none;
+    padding: 10px 0;
+    padding-left: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sidebar nav i {
+    padding-right: 20px;
+}
+
+/*Hover effects*/
+.sidebar li:hover a {
+    color: #000;
+    transition: .4s;
+}
+
+.sidebar li:hover i {
+    color: #000;
+    transition: .4s;
+}
+
+.sidebar li:hover {
+    background-color: #EAE509;
+    transition: .4s;
+}
+.fa:hover {
+    color: #EAE509;
+    transition: .4s;
+}
